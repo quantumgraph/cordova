@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-quantumgraph"
+    version="1.1.12.1">
+    <name>QGraph</name>
+    <description>quantumgraph cordova plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,quantumgraph</keywords>
+    <repo></repo>
+    <issue></issue>
+
+    <js-module src="www/QGraph.js" name="QGraph">
+        <clobbers target="QGraph" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="QGraph" >
+                <param name="android-package" value="QGraph"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/QGraph.java" target-dir="src/" />
+        <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+        <resource-file src="qgaar/QG-1.1.12.1.aar" target="qgaar/QG-1.1.12.1.aar" /> 
+    </platform>
+
+</plugin>

@@ -1,0 +1,20 @@
+{
+    "version": "1.1.12.1",
+    "name": "cordova-plugin-quantumgraph",
+    "cordova_name": "quantumgraph cordova plugin",
+    "description": "quantumgraph cordova plugin",
+    "license": "Apache 2.0",
+    "repo": "",
+    "issue": "",
+    "keywords": [
+        "cordova",
+        "quantumgraph",
+        "ecosystem:cordova",
+        "cordova-android"
+    ],
+    "platforms": [
+        "android",
+    ],
+    "engines": [],
+    "englishdoc": ""
+}
