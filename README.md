@@ -1,5 +1,5 @@
-Integrating Corodova Plugin for QGraph to your app
-==================================================
+Integrating QGraph Corodova Plugin to your app
+==============================================
 Follow the following steps for integration, and contact app@qgraph.io in case of any difficulty.
 
 I. Install QGraph SDK
