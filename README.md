@@ -139,6 +139,7 @@ productDetails = {
 }   
 QGraph.logEvent("product_viewed", productDetails);
 ```
-Notification Checklist
-----------------------
+
+III. Notification Checklist
+--------------------------
 Check out the guideance provided at http://docs.qgraph.io/en/latest/integrating-android-sdk.html#notification-checklist.
