@@ -2,8 +2,8 @@ Integrating Corodova Plugin for QGraph to your app
 ==================================================
 Follow the following steps for integration, and contact app@qgraph.io in case of any difficulty.
 
-I. Installing QGraph SDK
-------------------------
+I. Install QGraph SDK
+---------------------
 
 ### 1. Sign up 
 Go to http://app.qgraph.io and make an account
@@ -12,37 +12,37 @@ Go to http://app.qgraph.io and make an account
 In the "Set Up" section, select "Android" and then enter your app details. Click "Next" and note down your App Id.
 
 ### 3. Add QGraph Plugin
-1. Go to the root of your Cordova project, write
++ Go to the root of your Cordova project, write
 ```
 cordova plugin add https://github.com/quantumgraph/cordova
 ```
-2. In index.html of your project, add
++ In index.html of your project, add
 ```
 <script type="text/javascript" src="QGraph.js"></script>
 ```
 
-3. On the launch of your app, call these functions
++ On the launch of your app, call these functions
 ```
 QGraph.initializeSdk("<your app id>");
 QGraph.getInstance();
 QGraph.onStart();
 ```
-4. Add Optional permissions:
-* If you would like to reach out to uninstalled users by email, add following line in `app/src/main/AndroidManifest.xml` outside the `<application>` tag:
-```
-<uses-permission android:name="android.permission.GET_ACCOUNTS" />
-```
-* If you would like us to track the city of the user, add the following line in `app/src/main/AndroidManifest.xml` outside the `<application>` tag:
-```
-<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-```
-*  If you would like us to track device id the user, add the following line in `app/src/main/AndroidManifest.xml` outside the `<application>` tag:
-
-<uses-permission android:name="android.permission.READ_PHONE_STATE" />
-
-II. Using QGraph SDK
---------------------
++ Add Optional permissions:
+   * If you would like to reach out to uninstalled users by email, add following line in `app/src/main/AndroidManifest.xml` outside the `<application>` tag:
+   ```
+   <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+   ```
+   * If you would like us to track the city of the user, add the following line in    `app/src/main/AndroidManifest.xml` outside the `<application>` tag:
+   ```
+   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+   ```
+   *  If you would like us to track device id the user, add the following line in    `app/src/main/AndroidManifest.xml` outside the `<application>` tag:
+   ```
+   <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+   ```
+II. Use QGraph SDK
+-------------------
 Once you are done with above basic integration, you can use this section to pass us further information.
 
 ### 1. Logging user profiles
@@ -139,7 +139,6 @@ productDetails = {
 }   
 QGraph.logEvent("product_viewed", productDetails);
 ```
-
 III. Notification Checklist
---------------------------
+----------------------
 Check out the guideance provided at http://docs.qgraph.io/en/latest/integrating-android-sdk.html#notification-checklist.
