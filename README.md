@@ -12,7 +12,7 @@ Go to http://app.qgraph.io and make an account
 In the "Set Up" section, select "Android" and then enter your app details. Click "Next" and note down your App Id.
 
 ### 3. Add QGraph Plugin
-+ Go to the root of your Cordova project, write
++ Go to the root of your Cordova project, and add QGraph plugin
 ```
 cordova plugin add https://github.com/quantumgraph/cordova
 ```
@@ -41,6 +41,7 @@ QGraph.onStart();
    ```
    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
    ```
+
 II. Use QGraph SDK
 -------------------
 Once you are done with above basic integration, you can use this section to pass us further information.
