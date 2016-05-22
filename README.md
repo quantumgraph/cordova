@@ -2,8 +2,8 @@ Integrating Corodova Plugin for QGraph to your app
 ==================================================
 Follow the following steps for integration, and contact app@qgraph.io in case of any difficulty.
 
-I. Install QGraph SDK
----------------------
+I. Installing QGraph SDK
+------------------------
 
 ### 1. Sign up 
 Go to http://app.qgraph.io and make an account
@@ -41,8 +41,8 @@ QGraph.onStart();
 
 <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
-II. Use QGraph SDK
--------------------
+II. Using QGraph SDK
+--------------------
 Once you are done with above basic integration, you can use this section to pass us further information.
 
 ### 1. Logging user profiles
