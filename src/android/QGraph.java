@@ -113,9 +113,9 @@ public class QGraph extends CordovaPlugin {
                     } else if ("onStop".equals(action)) {
                         qg.onStop();
                     } else if ("isQGMessage".equals(action)) {
-                        callbackContext.success(qg.isQGMessage(args.optString(0));
+                        callbackContext.success(Boolean.toString(qg.isQGMessage(args.optString(0))));
                     } else if ("setTracking".equals(action)) {
-                        qg.setTracking(args.optBoolen(0), args.optBoolen(1), args.optBoolen(2));
+                        qg.setTracking(args.optBoolean(0), args.optBoolean(1), args.optBoolean(2));
                     }
                 } 
             }
