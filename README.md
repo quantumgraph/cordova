@@ -1,5 +1,5 @@
-Integrating QGraph Corodova Plugin to your app
-==============================================
+Integrating Corodova Plugin for QGraph to your app
+==================================================
 Follow the following steps for integration, and contact app@qgraph.io in case of any difficulty.
 
 I. Install QGraph SDK
@@ -21,17 +21,18 @@ cordova plugin add https://github.com/quantumgraph/cordova
 <script type="text/javascript" src="QGraph.js"></script>
 ```
 
-+ On the launch of your app, call these functions
++ In `onDeviceReady()`, call these functions
 ```
 QGraph.initializeSdk("<your app id>");
 QGraph.getInstance();
 QGraph.onStart();
 ```
++ In `onResume()`, call these functions
+```
+QGraph.getInstance();
+QGraph.onStart();
+```
 + Add Optional permissions:
-   * If you would like to reach out to uninstalled users by email, add following line in `app/src/main/AndroidManifest.xml` outside the `<application>` tag:
-   ```
-   <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-   ```
    * If you would like us to track the city of the user, add the following line in    `app/src/main/AndroidManifest.xml` outside the `<application>` tag:
    ```
    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
